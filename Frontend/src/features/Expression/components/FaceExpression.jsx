@@ -36,11 +36,11 @@ export default function FaceExpression({ onClick = () => { } }) {
         <div style={{ textAlign: "center" }}>
             <video
                 ref={videoRef}
-                style={{ width: "400px", borderRadius: "12px" }}
+                style={{ width: "700px", borderRadius: "12px" }}
                 playsInline
             />
             <h2>{expression}</h2>
-            <button onClick={handleClick} >Detect expression</button>
+            <button onClick={handleClick} className="button" >Detect expression</button>
         </div>
     );
 }

@@ -1,0 +1,122 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.player-card {
+  width: 100%;
+  max-width: 520px;
+  background: linear-gradient(135deg, #1f1f3a, #2e2752);
+  border-radius: 20px;
+  padding: 20px;
+  color: #f8f8ff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.player-top-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.player-poster {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.player-subtitle {
+  margin: 0;
+  color: #c6c6e8;
+  text-transform: capitalize;
+}
+
+.player-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.player-time {
+  font-size: 12px;
+  color: #d5d6ff;
+}
+
+.player-progress-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.player-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff7a59, #ff4f7b);
+  transition: width 0.2s ease;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.player-control-button,
+.player-play-button,
+.player-speed-button {
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.player-control-button {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.player-play-button {
+  padding: 10px 18px;
+  background: #ff7a59;
+  color: #fff;
+  font-weight: 700;
+}
+
+.player-speed-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.player-speed-button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 7px 10px;
+  background: transparent;
+  color: #f8f8ff;
+}
+
+.player-speed-button.active {
+  background: #ff7a59;
+  border-color: #ff7a59;
+}
